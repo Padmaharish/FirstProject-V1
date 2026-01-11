@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: show repo structure
+        run: ls -R
       - name: setup node 
         uses: actions/setup-node@v4
         with:
